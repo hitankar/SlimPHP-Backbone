@@ -1,0 +1,53 @@
+<div class="container">
+  
+  <h2>Appointments</h2>
+
+    <div id="app-data" class="section row">
+      <div class="center">No appointments found</div>
+    </div>
+
+  <!-- Modal Trigger -->
+<div class="fixed-action-btn">
+<a class="btn-floating btn-large waves-effect waves-light teal darken-1" href="#newAppointment"><i class="material-icons">add</i></a>
+</div>
+
+    <!-- Modal Structure -->
+  <form id="newAppointment" class="modal bottom-sheet grey lighten-5">
+    <div class="modal-content container">
+      <h4>New Appointment</h4>
+      <div class="row">
+        <div class="col m5">
+          <div class="input-field">
+            <div id="symptoms" class="chips"></div>
+            <label for="symptoms" >Symptoms</label>
+          </div>
+        </div>
+        <div class="col m5">
+          <div class="input-field">
+            <div id="drugs" class="chips"></div>
+            <label for="drugs">Drugs</label>
+          </div>
+        </div>
+        <div class="col m2">
+          <div class="input-field">
+            <input id="next_appointment" type="date" class="datepicker" >
+            <label for="next_appointment">Next Appointment</label>
+            <input type="hidden" value="<%= patient_id %>" id="patient_id">
+          </div>
+        </div>
+        <div class="col m12">
+          <div class="input-field">
+            <textarea id="note" class="materialize-textarea validate"></textarea>
+            <label for="note" data-error="Error" data-success="Correct">Note</label>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="modal-footer grey lighten-5">
+        <div class="container">
+          <button type="submit" class="btn modal-action modal-close waves-effect waves-red teal darken-1 white-text">Save</button>&nbsp;
+          <button id="repeat" type="button" class="btn waves-effect waves-grey grey lighten-3 black-text">Repeat Last</button>&nbsp;
+        </div>
+      </div>
+  </form>
+</div>

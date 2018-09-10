@@ -1,0 +1,11 @@
+  <div id="patient-card-<%= id %>" class="card hoverable teal lighten-1">
+	<div class="card-content white-text">
+        <span class="card-title"><%= name %></span>
+    <p><em class="text-white text-darken-1"><%= age %></em></p>
+	  <p><%= address %></p>
+	</div>
+	<div class="card-action">
+      <a href="#/patients/<%= id %>/appointments" class="btn grey lighten-4 grey-text text-darken-1">Appointments</a>
+      <button id="delete-patient-<%= id %>" data-id="<%= id %>" onclick="javascript:confirm('Are you sure to delete this patient?'); return false;" class="btn btn-delete-patient grey lighten-4 grey-text text-darken-1">Delete</button>
+    </div>
+  </div>
