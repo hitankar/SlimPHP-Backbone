@@ -1,9 +1,0 @@
-{
-    "require": {
-        "slim/slim": "^3.0",
-        "monolog/monolog": "*",
-        "robmorgan/phinx": "*",
-        "bdemirkir/slim-json-view": "dev-master",
-        "tuupola/slim-basic-auth": "*"
-    }
-}
